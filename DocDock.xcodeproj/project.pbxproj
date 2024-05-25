@@ -8,17 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		44F745562BFFA0B1009BC403 /* DocDockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F745552BFFA0B1009BC403 /* DocDockApp.swift */; };
-		44F745582BFFA0B1009BC403 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F745572BFFA0B1009BC403 /* ContentView.swift */; };
+		44F745582BFFA0B1009BC403 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F745572BFFA0B1009BC403 /* LoginView.swift */; };
 		44F7455A2BFFA0B2009BC403 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F745592BFFA0B2009BC403 /* Assets.xcassets */; };
 		44F7455D2BFFA0B2009BC403 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F7455C2BFFA0B2009BC403 /* Preview Assets.xcassets */; };
+		44F745642BFFA2F4009BC403 /* DocDockSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F745632BFFA2F4009BC403 /* DocDockSplashView.swift */; };
+		44F745682C01195F009BC403 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F745672C01195F009BC403 /* MainView.swift */; };
+		44F7456A2C01CE99009BC403 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F745692C01CE99009BC403 /* HomeView.swift */; };
+		44F7456C2C01CEF1009BC403 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7456B2C01CEF1009BC403 /* ChatsView.swift */; };
+		44F7456E2C01CF10009BC403 /* NetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7456D2C01CF10009BC403 /* NetworkView.swift */; };
+		44F745712C020B41009BC403 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 44F745702C020B41009BC403 /* GoogleSignIn */; };
+		44F745732C020B41009BC403 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 44F745722C020B41009BC403 /* GoogleSignInSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44F745522BFFA0B1009BC403 /* DocDock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocDock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F745552BFFA0B1009BC403 /* DocDockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocDockApp.swift; sourceTree = "<group>"; };
-		44F745572BFFA0B1009BC403 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		44F745572BFFA0B1009BC403 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		44F745592BFFA0B2009BC403 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44F7455C2BFFA0B2009BC403 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		44F745632BFFA2F4009BC403 /* DocDockSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocDockSplashView.swift; sourceTree = "<group>"; };
+		44F745672C01195F009BC403 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		44F745692C01CE99009BC403 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		44F7456B2C01CEF1009BC403 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
+		44F7456D2C01CF10009BC403 /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
+		44F745742C020C48009BC403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F745712C020B41009BC403 /* GoogleSignIn in Frameworks */,
+				44F745732C020B41009BC403 /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +66,16 @@
 		44F745542BFFA0B1009BC403 /* DocDock */ = {
 			isa = PBXGroup;
 			children = (
+				44F745742C020C48009BC403 /* Info.plist */,
+				44F745632BFFA2F4009BC403 /* DocDockSplashView.swift */,
 				44F745552BFFA0B1009BC403 /* DocDockApp.swift */,
-				44F745572BFFA0B1009BC403 /* ContentView.swift */,
+				44F745572BFFA0B1009BC403 /* LoginView.swift */,
 				44F745592BFFA0B2009BC403 /* Assets.xcassets */,
 				44F7455B2BFFA0B2009BC403 /* Preview Content */,
+				44F745672C01195F009BC403 /* MainView.swift */,
+				44F745692C01CE99009BC403 /* HomeView.swift */,
+				44F7456B2C01CEF1009BC403 /* ChatsView.swift */,
+				44F7456D2C01CF10009BC403 /* NetworkView.swift */,
 			);
 			path = DocDock;
 			sourceTree = "<group>";
@@ -83,6 +104,10 @@
 			dependencies = (
 			);
 			name = DocDock;
+			packageProductDependencies = (
+				44F745702C020B41009BC403 /* GoogleSignIn */,
+				44F745722C020B41009BC403 /* GoogleSignInSwift */,
+			);
 			productName = DocDock;
 			productReference = 44F745522BFFA0B1009BC403 /* DocDock.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +136,9 @@
 				Base,
 			);
 			mainGroup = 44F745492BFFA0B1009BC403;
+			packageReferences = (
+				44F7456F2C020B41009BC403 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 44F745532BFFA0B1009BC403 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44F745582BFFA0B1009BC403 /* ContentView.swift in Sources */,
+				44F7456C2C01CEF1009BC403 /* ChatsView.swift in Sources */,
+				44F745642BFFA2F4009BC403 /* DocDockSplashView.swift in Sources */,
+				44F7456E2C01CF10009BC403 /* NetworkView.swift in Sources */,
+				44F745582BFFA0B1009BC403 /* LoginView.swift in Sources */,
+				44F745682C01195F009BC403 /* MainView.swift in Sources */,
+				44F7456A2C01CE99009BC403 /* HomeView.swift in Sources */,
 				44F745562BFFA0B1009BC403 /* DocDockApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +308,7 @@
 				DEVELOPMENT_TEAM = 4LRD7293A6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DocDock/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +338,7 @@
 				DEVELOPMENT_TEAM = 4LRD7293A6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DocDock/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +379,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		44F7456F2C020B41009BC403 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		44F745702C020B41009BC403 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44F7456F2C020B41009BC403 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		44F745722C020B41009BC403 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44F7456F2C020B41009BC403 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 44F7454A2BFFA0B1009BC403 /* Project object */;
 }
