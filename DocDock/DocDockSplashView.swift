@@ -8,17 +8,27 @@
 import SwiftUI
 
 struct DocDockSplashView: View {
+    @State var isActive = false
     var body: some View {
         ZStack {
-            LinearGradient(colors: [.pink, .orange, .yellow], startPoint: .top, endPoint: .bottom)
-                .ignoresSafeArea()
-                .opacity(0.8)
-            VStack {
-                Text("This is DocDock-verse")
-                Text("Welcome.")
-                Image(systemName: "heart.fill")
+            if isActive {
+                LoginView()
+            } else {
+                LinearGradient(colors: [.pink, .orange, .yellow], startPoint: .top, endPoint: .bottom)
+                    .ignoresSafeArea()
+                    .opacity(0.8)
+                VStack {
+                    Text("This is DocDock-verse")
+                    Text("Welcome.")
+                    Image(systemName: "heart.fill")
+                }
             }
         }
+        .onAppear(perform: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                isActive = true
+            }
+        })
     }
 }
 

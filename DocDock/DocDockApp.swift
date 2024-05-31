@@ -6,12 +6,28 @@
 //
 
 import SwiftUI
+import GoogleSignIn
 
 @main
 struct DocDockApp: App {
+    let isUserSignedIn = UserDefaults.standard.bool(forKey: "IsUserSignIn")
+    
     var body: some Scene {
         WindowGroup {
-            DocDockSplashView()
+            if isUserSignedIn {
+                MainView()
+            } else {
+                DocDockSplashView()
+                    .onOpenURL { url in
+                        GIDSignIn.sharedInstance.handle(url)
+                    }
+                    .onAppear {
+                        GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
+                            // Check if `user` exists; otherwise, do something with `error`
+                            guard error == nil else { return }
+                        }
+                    }
+            }
         }
     }
 }
